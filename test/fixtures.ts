@@ -1,5 +1,5 @@
 import type { Address, HexString } from 'web3';
-import type { Proof } from '../src/types';
+import type { StorageProof } from '../src/types';
 
 export const getRawBlockTransactionsData = {
 	input: 251491,
@@ -142,7 +142,10 @@ export const getL2ToL1LogProofData = {
 		root: '0x920c63cb0066a08da45f0a9bf934517141bd72d8e5a51421a94b517bf49a0d39',
 	},
 };
-export const getProofData: { input: [Address, [HexString], number]; output: Proof } = {
+export const getProofData: {
+	input: [Address, [HexString], number];
+	output: StorageProof;
+} = {
 	input: [
 		'0x0000000000000000000000000000000000008003',
 		['0x8b65c0cf1012ea9f393197eb24619fd814379b298b238285649e14f936a5eb12'],
